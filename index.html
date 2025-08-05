@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman HTML Lanjutan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        form {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding doesn't affect total width */
+        }
+        form button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .media-container {
+            margin-bottom: 30px;
+            background-color: #e9e9e9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        video, audio {
+            display: block;
+            margin-top: 15px;
+            width: 100%;
+            max-width: 600px; /* Optional: Limit max width for media */
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ccc;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contoh Elemen HTML Lanjutan</h1>
+
+    ---
+
+    <h2>Formulir Pendaftaran</h2>
+    <form action="#" method="post">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Daftar</button>
+    </form>
+
+    ---
+
+    <h2>Data Siswa</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama Siswa</th>
+                <th>Kelas</th>
+                <th>Umur</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Rangga</td>
+                <td>XII RpL</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Aditya</td>
+                <td>XII Rpl</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Al kahfi</td>
+                <td>XII Rpl </td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ramdhan</td>
+                <td>X RPL</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+
+    ---
+
+    <h2>Video Contoh</h2>
+    <div class="media-container">
+        <p>Ini adalah contoh pemutaran video lokal:</p>
+        <video controls>
+            <source src="placeholder-video.mp4" type="video/mp4">
+            <source src="placeholder-video.webm" type="video/webm">
+            Maaf, browser Anda tidak mendukung tag video.
+        </video>
+        <p></p>
+    </div>
+
+    ---
+
+    <h2>Audio Contoh</h2>
+    <div class="media-container">
+        <p>Ini adalah contoh pemutaran audio lokal:</p>
+        <audio controls>
+            <source src="placeholder-audio.mp3" type="audio/mpeg">
+            <source src="placeholder-audio.ogg" type="audio/ogg">
+            Maaf, browser Anda tidak mendukung tag audio.
+        </audio>
+        <p></p>
+    </div>
+
+    ---
+
+    <h2> (Iframe)</h2>
+
+    <iframe src="https://id.wikipedia.org/wiki/Halaman_Utama" title="Wikipedia Indonesia">
+        Browser Anda tidak mendukung iframe.
+    </iframe>
+
+    <pre>
+        <footer>
+             <p>&copy; 2025 Aditya Herlambang.<br>Semua Hak Dilindungi.</p>
+        </footer>
+
+</body>
+</html>
